@@ -8,7 +8,7 @@ Crie uma nova branch para cada atividade como "seuNome-atividade02 (Exemplo: dav
 Exercícios da Aula 02:
 
 06. Nome, Sexo, Idade, Ano de estudo (Ex: 6º ano), raça;
-09. Lista com 10 novos objetos.
+09. Lista com 10 novos objetos. 
 
 Exercícios da Aula 03:
 
