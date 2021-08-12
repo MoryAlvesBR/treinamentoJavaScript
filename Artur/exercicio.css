@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(255, 115, 0);
+    color:white;
+}
+.tabela{
+    background-color: purple;
+    border-radius: 50px;
+    margin-bottom: 150px;
+    text-align: center;
+    width: 350px;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+}

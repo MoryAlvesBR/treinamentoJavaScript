@@ -1,21 +1,32 @@
 //1- variavel com nome
+
 const name = 'Artur'
 console.log('name:', name)
+
 //2- variavl com dia com chuva ou nao
+
 const rain = true
 console.log(rain)
+
 //3 - variavel com o ano que nasceu
+
 let date = '18-09-2001'
 console.log('Date: ',date)
+
 //4 - variavel com idade e depois atribuir outro valor
+
 var age = 19
 console.log('Age: ',age)
 age = 20
 console.log('Altered age: ',age)
+
 //5 - criar uma lista de 1-10
+
 const list= [1,2,3,4,5,6,7,8,9,10]
 console.log('List: ',list)
+
 //6 - criar um objeto com dados
+
 const object= {
     namee: 'Joao',
     age: 19,
@@ -25,7 +36,9 @@ const object= {
 
 }
 console.log(object)
+
 //7 - criar um objeto com dados dos pontos 1,2,3,4
+
 const data={
     name,
     rain,
@@ -33,9 +46,12 @@ const data={
     age
 }
 console.log(data)
+
 //8 - multiplicar valor que esta em x
+
 let x = 10
 console.log('total: ',x*2)
+
 // 9 - criar uma lista de objetos com base no ponto 6
 
 function objeto(name,age,gender,grade,race){
