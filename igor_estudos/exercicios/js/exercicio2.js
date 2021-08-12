@@ -1,5 +1,5 @@
 // Exercicio - 2 //
-// 1.
+// 1. aaaa
 const nomeIgor = 'Igor';
 console.log(nomeIgor);
 // 2.

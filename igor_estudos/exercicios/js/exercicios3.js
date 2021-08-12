@@ -1,6 +1,6 @@
 // Exercicio Aula 3
 
-//1.
+//1.sdasfasfasdas
 class Automovel {
     constructor(nome, marca, modelo, paisOrigem){
         this.nome = nome;
