@@ -2,7 +2,7 @@
 const Name = 'Jackelyne'
 console.log(Name);
 // 2.
-const Clima = ' Nao esta chovendo, gracas a Deus!'
+const Clima = ' Não esta chovendo, graças a Deus!'
 console.log(Clima);
 // 3.
 var anodenasc = 2001

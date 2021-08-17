@@ -1,0 +1,79 @@
+
+body { 
+    /* max-width: 100%;
+    height: auto; */
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-family: 'Righteous', cursive;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-image: url(assets/fundo.jpg);
+}
+header {
+    background-color: black;
+    padding: 5px;
+    margin-left: 374px;
+    margin-right: 374px;
+    margin-top: 75px;
+    /* width: 1000px; */
+    color: white;
+    /* border-radius:10px; */
+    text-align: center;
+}
+
+/* h1 {
+    text-align: center;
+    align-items: center;
+
+    border: 3%;
+    display: block;
+
+    margin: 5px 5px 5px 5px;
+
+} */
+
+
+ div{
+    display: inline-block;
+
+}
+
+#E1{
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    /* border-radius: 73px; */
+    width: 700px;
+    height: auto;
+    box-shadow:5px 5px 10px black;
+    /* margin: 5px 5px 5px 5px; */
+    
+}
+
+#E2{
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    /* border-radius: 73px; */
+    width: 700px;
+    height: auto;
+    margin-left: -5px;
+    box-shadow:5px 5px 10px black;
+    /* margin: 5px 5px 5px 5px; */
+}
+
+input{
+    border: 0px;
+    height: 30px;
+    /* padding: 10px; */
+    outline: 0;
+    background-color: rgb(17, 3, 78);
+    color: white;
+    border-radius: 3px;
+    font-weight:bold ;
+    transition: all ease 0.3s;
+}
+input:hover{
+    background-color:  rgb(20, 0, 107);
+}
