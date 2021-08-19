@@ -1,32 +1,279 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
 
 :root {
-    --primary-color: rgb(42, 148, 235);
+    --primary-color: rgb(31, 31, 31);
     --primary-color-darker: rgb(27, 76, 116);
 }
 
 * {
     box-sizing: border-box;
     outline: 0;
+    color: rgb(186, 153, 225);
+}
+
+strong {
+    color: rgb(202, 108, 152);
+    font-size: 0.9em;
 }
 
 body {
-    margin: 2;
+    background-image:url('../img/jujutsu2.gif');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
     padding: 0;
-    background: var(--primary-color);
-    font-family: 'Open Sans', sans-serif;
+    /* background: var(--primary-color); */
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Press Start 2P', cursive;
     font-size: 1.3em;
     line-height: 1.5em;
 }
 
+button {
+	box-shadow:inset 0px 1px 0px 0px rgb(186, 153, 225);
+	background:linear-gradient(to bottom, rgb(186, 153, 225) 5%, rgb(202, 108, 152) 100%);
+	background-color:rgb(186, 153, 225);
+	border-radius:6px;
+	border:1px solid rgb(186, 153, 225);
+	display:inline-block;
+	cursor:pointer;
+	color:#fafafa;
+	font-family: 'Press Start 2P';
+	font-size:12px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #a927b0;
+}
+button:hover {
+	background:linear-gradient(to bottom, rgb(202, 108, 152) 5%, rgb(186, 153, 225) 100%);
+	background-color:rgb(202, 108, 152);
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
 .container {
-    max-width: 640px;
-    margin: 50px auto;
-    background: #fff;
-    padding: 20px;
+    max-width: 750px;
+    margin: 130px auto;
+    background: rgb(40, 42, 54);
+    padding: 15px;
     border-radius: 10px;
 }
 
+.container2 {
+    max-width: 750px;
+    margin: 50px auto;
+    background: rgb(40, 42, 54);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.title1{
+    color: rgb(227, 182, 32);
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.title2{
+    color: rgb(227, 182, 32);
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.perguntas{
+    /* color: rgb(202, 108, 152); */
+    font-size: 0.6em;
+}
+
+.apagar1{
+    color: rgb(81, 197, 92);
+    font-size: 0.6em;
+}
+
+.apagar2{
+    color: rgb(81, 197, 92);
+    font-size: 0.6em;
+}
+.apagar3{
+    color: rgb(81, 197, 92);
+    font-size: 0.6em;
+}
+.apagar4{
+    color: rgb(81, 197, 92);
+    font-size: 0.6em;
+}
+.apagar5{
+    color: rgb(81, 197, 92);
+    font-size: 0.6em;
+}
+.apagar6{
+    color: rgb(81, 197, 92);
+    font-size: 0.5em;
+}
+.apagar7{
+    color: rgb(81, 197, 92);
+    font-size: 0.48em;
+}
+.apagar8{
+    color: rgb(81, 197, 92);
+    font-size: 0.6em;
+}
+.apagar9{
+    color: rgb(81, 197, 92);
+    font-size: 0.5em;
+}
+.apagar10{
+    color: rgb(81, 197, 92);
+    font-size: 0.6em;
+}
+.apagar11{
+    color: rgb(81, 197, 92);
+    font-size: 0.6em;
+}
+.apagar12{
+    color: rgb(81, 197, 92);
+    font-size: 0.45em;
+}
+.apagar13{
+    color: rgb(81, 197, 92);
+    font-size: 0.6em;
+}
+.apagar14{
+    color: rgb(81, 197, 92);
+    font-size: 0.45em;
+}
+.apagarimg1{
+    margin-top: 10px;
+}
+.apagarimg2{
+    margin-top: 10px;
+}
+.apagarimg3{
+    margin-top: 10px;
+}
+.apagarimg4{
+    margin-top: 10px;
+}
+.apagarimg5{
+    margin-top: 10px;
+}
+.apagarimg6{
+    margin-top: 10px;
+}
+.apagarimg7{
+    margin-top: 10px;
+}
+.apagarimg8{
+    margin-top: 10px;
+}
+.apagarimg9{
+    margin-top: 10px;
+}
+.apagarimg10{
+    margin-top: 10px;
+}
+.apagarimg11{
+    margin-top: 10px;
+}
+.apagarimg12{
+    margin-top: 10px;
+}
+.apagarimg13{
+    margin-top: 10px;
+}
+.apagarimg14{
+    margin-top: 10px;
+}
+.apagarc1{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(186, 153, 225);
+    font-size: 0.6em;
+}
+.apagarc2{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(186, 153, 225);
+    font-size: 0.6em;
+}
+.apagarc3{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(186, 153, 225);
+    font-size: 0.6em;
+}
+.apagarc4{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(186, 153, 225);
+    font-size: 0.6em;
+}
+.apagarc5{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(186, 153, 225);
+    font-size: 0.6em;
+}
+.apagarc6{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(186, 153, 225);
+    font-size: 0.6em;
+}
+.apagarc7{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(186, 153, 225);
+    font-size: 0.6em;
+}
+.apagarc8{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(186, 153, 225);
+    font-size: 0.6em;
+}
+.apagarc9{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(186, 153, 225);
+    font-size: 0.6em;
+}
+.apagarc10{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(186, 153, 225);
+    font-size: 0.6em;
+}
+.apagarc11{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(186, 153, 225);
+    font-size: 0.6em;
+}
+.apagarc12{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(186, 153, 225);
+    font-size: 0.6em;
+}
+.apagarc13{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(186, 153, 225);
+    font-size: 0.6em;
+}
+.apagarc14{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(186, 153, 225);
+    font-size: 0.6em;
+}
+
+
+/* 
 form input, form label, form button {
     display:block;
     width: 100%;
@@ -60,4 +307,4 @@ form button:hover {
 
 form button:active {
     background: red;
-}
+} */
