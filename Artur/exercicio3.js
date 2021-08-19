@@ -10,11 +10,11 @@ class automovel{
     }
     retornar(){
         console.log(`\n|Nome: ${this.nome} | Marca: ${this.marca} | Modelo: ${this.modelo} | Pais: ${this.paisOrigem} | Combustivel: ${this.tipoCombustivel} |\n`)
-    }
-var automovel1  = new automovel('Gol','Volkswagen','flex','Brasil','Gasolina')
-automovel1.retornar();
-var automovel2  = new automovel('Ecosport','Ford','flex','Brasil','Etanol')
-automovel2.retornar();
+    }}
+    var automovel1  = new automovel('Gol','Volkswagen','flex','Brasil','Gasolina')
+    automovel1.retornar();
+    var automovel2  = new automovel('Ecosport','Ford','flex','Brasil','Etanol')
+    automovel2.retornar();
 
 // Criar classe carro com os atributos 
 

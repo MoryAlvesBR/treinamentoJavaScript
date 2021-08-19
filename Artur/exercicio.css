@@ -1,14 +1,76 @@
 body{
-    background-color: rgb(255, 115, 0);
+    background-color: black;
     color:white;
 }
+
 .tabela{
     background-color: purple;
     border-radius: 50px;
     margin-bottom: 150px;
     text-align: center;
-    width: 350px;
-    height: 300px;
+    width: 650px;
+    height: 750px;
     margin: auto;
     margin-top: 50px;
+    font-weight: bold;
+
+}
+.titulo1{
+    font-size: 28px;
+}
+.botao1{
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: 14px;
+    margin-top: 5px;
+}
+.botao2{
+    border-radius: 20px;
+    margin-right: 13px;
+    margin-left: 10px;
+    margin-top: 5px;
+
+}
+.questao{
+    background-color: rgb(205, 152, 221);
+    width: 400px;
+    height: 30px;
+    margin: auto;
+    border-radius: 30px;
+}
+.questao1{
+    margin-right: 30px;
+}
+.tabela2{
+    background-color: purple;
+    border-radius: 50px;
+    margin-bottom: 150px;
+    text-align: center;
+    width: 650px;
+    height: 250px;
+    margin: auto;
+    margin-top: 50px;
+    font-weight: bold;
+
+}
+.titulo2{
+   
+    
+
+}
+
+.tabela3{
+    background-color: purple;
+    border-radius: 50px;
+    margin-bottom: 150px;
+    text-align: center;
+    width: 650px;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    font-weight: bold;
+
+}
+.titulo3{
+
 }
