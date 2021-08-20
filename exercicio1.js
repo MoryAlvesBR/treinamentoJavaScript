@@ -77,3 +77,4 @@ var num1 = 2
 var num2 =2
 var result = num1 * num2
 console.log(`o produto da multiplicacao de ${num1} x ${num2} = ${result}`)
+

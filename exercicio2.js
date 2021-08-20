@@ -32,8 +32,6 @@ var lista1 =[
 
 //3. Utilize **FOR** ou **FOR OF** e imprima a cada execução o nome e marca do automóvel
 for (let carros of lista1){
-    for ( carros in lista1) {
-        console.log(carros)}
     console.log(carros)
 }
 
