@@ -33,11 +33,6 @@ var dados = {
     Name: "Antonio Carlos",
     Age: "19", 
     EnrollmentNumber:"001",
-
-    Name1: "Paulo",
-    Age1: "20", 
-    EnrollmentNumber1:"002",
-
 }
 console.log(dados.Name)
 console.log(dados.Age)
@@ -47,15 +42,17 @@ console.log("")
 
 //7. Crie um objeto de nome dados com as variaveis (chave-valor) dos pontos 1, 2, 3 e 4.
 var dados1 = {
-    chave_valor1: "Antonio Carlos",
-    chave_valor2: "The day is rainy",
-    chave_valor3: "02/04/2002",
-    chave_valor4: "19"
+   Name:Name,
+   Tempo:Time,
+   Nascimento:date1,
+   idade:age,
+
+
 }
-console.log(dados1.chave_valor1)
-console.log(dados1.chave_valor2)
-console.log(dados1.chave_valor3)
-console.log(dados1.chave_valor4)
+console.log(dados1.Name)
+console.log(dados1.Tempo)
+console.log(dados1.Nascimento)
+console.log(dados1.idade)
 console.log(dados1)
 console.log("")
 
