@@ -1,0 +1,383 @@
+body {
+    background-image: url(background3.jpg);
+    background-size: 100%;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+ul { 
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+nav{
+    background-color: rgb(0, 0, 0);
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+h1, p {
+    color: white;
+}
+
+nav, ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    padding: 0  20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 10px;
+    font-size: 45px;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    display: none;
+    width: 100%;
+
+}
+
+li:hover,
+h1:hover,
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+button:focus ~ ul{
+    height: 200px;
+}
+
+
+@media (max-width: 800px){
+    
+}
+nav, ul {
+    flex-direction: column;
+
+}
+
+ul{
+    text-align: center;
+    margin: 0;
+    height: 0;
+}
+
+nav {
+    padding: 50px;
+    align-items: flex-start;
+}
+
+h1 {
+    margin: 10px;
+}
+
+button{
+    margin-right: -40px;
+    display: flex;
+}
+
+li, ul{
+    width: 100%;
+}
+
+#logo {
+    width: 100%;
+}
+
+input {
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+}
+
+/* pratos */
+
+main {
+    margin: 20px 0px;
+}
+
+
+main .container h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+main .container .pratos {
+    display: flex;
+    flex-direction: column;
+
+}
+
+main .container .pratos .prato {
+    background-color: white;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+}
+
+.prato{
+    width: 300px;
+}
+
+.prato .img {
+    
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 10px;
+}
+
+.prato:hover{
+    background-color: #d6d6d6;
+}
+
+.prato h4 {
+    padding: 0px 20px;
+    text-align: center;
+    font-size:1.2rem ;
+    margin-bottom: 5px;
+}
+
+.prato .p{
+    padding: 0px 20px;
+    font-size: 1rem;
+
+}
+
+.prato .btn {
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px black;
+    transition: 0.3s ease;
+}
+.prato .btn:hover {
+    background-color: white;
+    color: black;
+}
+.container {
+    width: 90vw;
+    margin: 0px auto;
+}
+
+@media (min-width: 600px){
+    main .container .pratos{
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    main .container .pratos .prato {
+        width: 300px;
+    }
+}
+
+
+/* sobremesas */
+
+
+main {
+    margin: 20px 0px;
+}
+
+
+main .container2 h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+main .container2 .sobremesas {
+    display: flex;
+    flex-direction: column;
+
+}
+
+main .container2 .sobremesas .sobremesa {
+    background-color: white;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+}
+
+.sobremesa{
+    width: 300px;
+}
+
+.sobremesa .img {
+    
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 10px;
+}
+
+.sobremesa:hover{
+    background-color: #d6d6d6;
+}
+
+.sobremesa h4 {
+    padding: 0px 20px;
+    text-align: center;
+    font-size:1.2rem ;
+    margin-bottom: 5px;
+}
+
+.sobremesa .p{
+    padding: 0px 20px;
+    font-size: 1rem;
+
+}
+
+.sobremesa .btn {
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px black;
+    transition: 0.3s ease;
+}
+.sobremesa .btn:hover {
+    background-color: white;
+    color: black;
+}
+.container2 {
+    width: 90vw;
+    margin: 0px auto;
+}
+
+@media (min-width: 600px){
+    main .container2 .sobremesas{
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    main .container2 .sobremesas .sobremesa {
+        width: 300px;
+    }
+}
+
+/*----------------- bebidas ------------------*/
+
+main {
+    margin: 20px 0px;
+}
+
+
+main .container3 h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+main .container3 .sobremesas {
+    display: flex;
+    flex-direction: column;
+
+}
+
+main .container3 .bebidas .bebida {
+    background-color: white;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+}
+
+.bebida{
+    width: 300px;
+}
+
+.bebida .img {
+    
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 10px;
+}
+
+.bebida:hover{
+    background-color: #d6d6d6;
+}
+
+.bebida h4 {
+    padding: 0px 20px;
+    text-align: center;
+    font-size:1.2rem ;
+    margin-bottom: 5px;
+}
+
+.bebida .p{
+    padding: 0px 20px;
+    font-size: 1rem;
+
+}
+
+.bebida .btn {
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px black;
+    transition: 0.3s ease;
+}
+.bebida .btn:hover {
+    background-color: white;
+    color: black;
+}
+.container3 {
+    width: 90vw;
+    margin: 0px auto;
+}
+
+@media (min-width: 600px){
+    main .container3 .bebidas{
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    main .container3 .bebidas .bebida {
+        width: 300px;
+    }
+}

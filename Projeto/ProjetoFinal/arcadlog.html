@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="arcadlog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Aquino Resto - Login/Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title-primary">Bem-vindo de volta!</h2>
+                <p class="description description-primary">Já é cadastrado?</p>
+                <p class="description description-primary">Faça login para continuar</p>
+                <button id="signin" class="btn btn-primary">Login</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title-second">Cadastre-se agora!</h2>
+                <p class="description description-second">Use seu primeiro e ultimo nome para o login.</p>
+                <form class="form">
+                    <input id="input-login" type="text" placeholder="Login" class="input">
+                    <p class="description description-second">Escolha sua Fidelidade entre:</p>
+                    <p class="description description-second">Gold, Silver, Bronze ou Nenhuma.</p>
+                    <input id="input-fidelidade" type="text" placeholder="Fidelidade" class="input">
+                    <a href="./arhome.html"onclick="cadastro()" class="btn btn-second" >Cadastrar</a>
+                    
+                    <!-- <input type="button" class="btn btn-second" value="Cadastrar" onclick="cadastro()"> -->
+                </form>
+            </div>
+       
+        </div>
+        
+               <!-- parte 2 -->
+
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title-primary">Bem-vindo!</h2>
+                <p class="description description-primary">Primeiro Acesso?</p>
+                <p class="description description-primary">Cadastre-se Agora</p>
+                <button id="signup" class="btn btn-primary">Cadastrar</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title-second">Login do Cliente</h2>
+                <p class="description description-second">Use seu primeiro e ultimo nome para efetuar o login.</p>
+                <form class="form">
+                    <input id="input-login2" type="text" placeholder="Login2" class="input">
+                    <p class="description description-second">Escolha sua Fidelidade entre:</p>
+                    <p class="description description-second">Gold, Silver, Bronze ou Nenhuma.</p>
+                    <input id="input-fidelidade2" type="text" placeholder="Fidelidade2" class="input">
+                    <a href="./arhome.html"onclick="login()" class="btn btn-second" >Cadastrar</a>
+
+                </form>
+            </div>
+         
+            </div>
+        </div>
+        </div>            
+    </div>
+    <script src="arcadlog.js"></script>
+</body>
+</html>

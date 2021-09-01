@@ -1,0 +1,298 @@
+* {
+     margin: 0; 
+     padding: 0; 
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url(background3.jpg);
+    background-size: 100%;
+    margin: 0;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 30px;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.content{
+    border-radius: 15px;
+    background-color: white;
+    width: 960px;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+.content::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+
+    left: 0%;
+}
+.first-content{
+    display: flex;
+}
+.first-content .second-column{
+    z-index: 11;
+}
+.first-column{
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+.second-column {
+    width: 60%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.second-content{
+    position: absolute;
+    display: none;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+.description{
+    font-size: 14px;
+    font-weight: 300;
+    line-height:  30px;
+}
+.description-primary{
+    color: white;
+}
+.description-second{
+    color: gray;
+    text-align: center;
+}
+.title {
+    font-size:20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.title-primary{
+    color: white;
+}
+
+.btn{
+    border-radius: 15px;
+    text-transform:uppercase;
+    color: white;
+    font-size: 10px;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border:none;
+    text-align: center;
+
+}
+.btn-primary{
+    background-color: transparent;
+    border: 1px solid white;
+    transition: background-color .5s;
+
+
+}
+.btn-primary:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn-second{
+    background-color: black;
+    border: 1px solid black ;
+    transition: background-color .5s;
+}
+.btn-second:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+.title-second{
+    color: rgb(0, 0, 0);
+}
+
+.input {
+    height: 45px;
+    border: none;
+    background-color:#dbdbdb ;
+    margin: 8px;
+}
+
+.btn-second{
+    height: 35px;
+    border: none;
+    background-color:#000000 ;
+    margin: 8px;
+
+    
+}
+
+
+/* second .content */
+
+.second-content{
+    position: absolute;
+    display: flex;
+}
+
+.second-content .first-column{
+    order: 2;
+    z-index: -1;
+}
+
+.second-content .second-column{
+    order: 1;
+    z-index: -1;
+}
+
+.sign-in-js .first-content .first-column{
+    z-index: -1;
+
+}
+
+
+.sign-in-js .second-content .second-column{
+    z-index: 11;
+}
+
+.sign-in-js .second-content .first-column{
+    z-index: 13;
+}
+
+.sign-in-js .content::before{
+    left: 60%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    animation: slidein 0.35s;
+
+    z-index: 12;
+}
+.sign-up-js .content::before{
+    animation: slideout 0.35s;
+
+    z-index: 12;
+}
+  /* ---- */
+
+.sign-up-js .second-content .first-column,
+.sign-up-js .second-content .second-column{
+    z-index: -1;
+}
+
+
+.sign-up-js .first-content .second-column{
+    z-index: 11;
+}
+
+.sign-up-js .first-content .first-column{
+    z-index: 13;
+}
+
+.sign-in-js .first-content .second-column{
+    z-index: -1;
+    position: relative;
+    animation: descolamento 0.35s;
+}
+
+
+/* animacao para o conteudo */
+
+@keyframes deslocamemto {
+    from{
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+    25%{
+        left: -80px;
+        opacity: .5;
+    }
+    50%{
+        left: -100px;
+        opacity: .2;
+    }
+
+    to{
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+
+/* animacao */
+
+@keyframes slidein {
+
+    from {
+        left: 0;
+        width: 40%;
+    }
+    25%{
+        left: 5%;
+        width: 50%;
+    }
+    50%{
+        left: 25%;
+        width: 60;
+    }
+
+    75%{
+        left: 45%;
+        width: 50%;
+    }
+    to {
+        left: 60%;
+        width: 40%;
+    }
+}
+
+@keyframes slideout {
+
+    from {
+        left: 60%;
+        width: 40%;
+    }
+    25%{
+        left: 45%;
+        width: 50%;
+    }
+    50%{
+        left: 25%;
+        width: 60;
+    }
+
+    75%{
+        left: 5%;
+        width: 50%;
+    }
+    to {
+        left: 0%;
+        width: 40%;
+    }
+}
+

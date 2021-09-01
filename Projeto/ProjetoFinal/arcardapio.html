@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=dxevice-width, initial-scale=1.0">
+    <title>Aquino Restô</title>
+
+    <link rel="stylesheet" href="arcardapio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <button> &#9776; </button>
+        <ul>
+            <li>
+                <p><input type="button" value="Home"  onclick="homeforcardapio()"> </p>
+            </li>
+            <li>
+                <p><input type="button" value="Clientes" onclick="clienteforcardapio()"></p>
+            </li>
+            <li>
+                <p><input type="button" value="Sair" onclick="sairforcardapio()"></p>
+            </li>
+        </ul>
+    </nav>
+
+    <Section>
+        <img src="logo2.png" alt="Logotipo" id="logo">
+    </Section>
+
+<!------------ pratos ------------->
+    <main>
+        <div class="container">
+            <h3>Pratos</h3>
+
+            <section class="pratos">
+                <article class="prato">
+                    <img src="vegetariano.png" alt="Vegetariano" class="img">
+                    <h4>Vegetariano</h4>
+                    <h4>R$ 50,00</h4>
+                    <p class="p"> Salada  </p>
+                    <input type="button" value="Quero esse prato" onclick="pedirprato1()" class="btn">
+                </article>
+                <article class="prato">
+                    <img src="peixe.png" alt="Peixe" class="img">
+                    <h4>Peixe</h4>
+                    <h4>R$ 40,00</h4>
+                    <p class="p"> Descricao </p>
+                    <input type="button" value="Quero esse prato" onclick="pedirprato1()" class="btn">
+                </article>
+                <article class="prato">
+                    <img src="frango.png" alt="Frango" class="img">
+                    <h4>Frango</h4>
+                    <h4>R$ 50,00</h4>
+                    <p class="p"> descricao </p>
+                    <input type="button" value="Quero esse prato" onclick="pedirprato1()" class="btn">
+                </article>
+                <article class="prato">
+                    <img src="carne.png" alt="Carne" class="img">
+                    <h4>Carne</h4>
+                    <h4>R$ 80,00</h4>
+                    <p class="p"> descricao </p>
+                    <input type="button" value="Quero esse prato" onclick="pedirprato1()" class="btn">
+                </article>
+            </section>
+
+        </div>
+
+
+<!---------- sobremesas ----------->
+
+
+        <div class="container2">
+            <h3>Sobremesas</h3>
+
+            <section class="sobremesas">
+                <article class="sobremesa">
+                    <img src="sorvetediet.png" alt="Sorvete Diet" class="img">
+                    <h4>Sorvete Diet</h4>
+                    <h4>R$ 15,00</h4>
+                    <p class="p"> descricao </p>
+                    <input type="button" value="Quero esse prato." onclick="pedirsobremesa1()" class="btn">
+                </article>
+                <article class="sobremesa">
+                    <img src="mousse.png" alt="sobremesa 02" class="img">
+                    <h4>Mousse</h4>
+                    <h4>R$ 20,00</h4>
+                    <p class="p"> descricao </p>
+                    <input type="button" value="Quero esse prato." onclick="pedirsobremesa2()" class="btn">
+                </article>
+                <article class="sobremesa">
+                    <img src="moussediet.jpg" alt="mousse" class="img">
+                    <h4>Mousse de Chocolate</h4>
+                    <h4>R$ 20,00</h4>
+                    <p class="p"> descricao </p>
+                    <input type="button" value="Quero esse prato." onclick="pedirsobremesa3()" class="btn">
+                </article>
+                <article class="sobremesa">
+                    <img src="moussediet.jpg" alt="mousse diet" class="img">
+                    <h4>Mousse Diet</h4>
+                    <h4>R$ 18,00</h4>
+                    <p class="p"> descricao</p>
+                    <input type="button" value="Quero esse prato." onclick="pedirsobremesa4()" class="btn">
+                </article>
+            </section>
+
+        </div>
+    </main> 
+
+
+</main> 
+
+
+    <script src="arcardapio.js"></script>
+</body>
+</html>
