@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Project.css">
+    <title>Project final</title>
+</head>
+<body>
+    <div>
+        <img src="./Img/logo2.png">
+        <h1>Meu restaurante</h1><BR>
+        </div>
+        <div >
+            <input class="abrir" type="button" value="Cadastre-se" onclick="Modal.open()">
+        </div>
+        <div class="modal1">
+            <div class="modal2">
+                <button class="close" onclick="Modal.close()">X</button>
+                <div class="modal3">
+                    <h2>Cadastro</h2>
+                    <div id="form">
+                        <form id="cadastre" action="" onsubmit="Form.submit(event)">
+                            <div class="inputs">
+                                <label>Login:</label>
+                                <input type="text" id="login" name="login" placeholder="Login" minlength="8" maxlength="20" data-required><BR><BR>
+                                <label>Senha:</label>
+                                <input type="password" id="senha" name="senha"  placeholder="Senha"minlength="8" maxlength="16"><BR><BR>
+                                <label>Fidelidade</label>
+                                <input type="text" id="fidelidade" name="fidelidade" placeholder="Fidelidade"maxlength="9"<BR><BR><BR>
+                                <input id="submit" class="abrir2" type="button" value="Cadastrar-se">
+                            </div>
+                        </form>
+                    </div> 
+                </div>
+             </div>
+        </div>
+<p class="error"></p>
+<p class="error1"></p>
+<script src="Project.js"></script>
+</body>
+</html>
