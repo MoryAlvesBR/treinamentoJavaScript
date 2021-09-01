@@ -1,0 +1,113 @@
+button {
+  background-color: transparent;
+  border: none;
+  color: #be7264;
+}
+
+#menu ul {
+  padding:0px;
+  margin:0px;
+  background-color:#e6d7d7;
+  list-style:none;
+}
+#menu ul li { display: inline; }
+
+ul li a {
+  padding: 3px 10px;
+  display: inline-block;
+
+
+  /* visual do link */
+  background-color:#ec9b8d;
+  color: #333;
+  text-decoration: none;
+  border-bottom:3px solid #e9a7a7;
+
+
+}
+body {
+    background-image: url(https://static2.oimenu.com.br/assets/base/308/320/2a9/fachada-restaurante-casa-antiga.jpg);
+    background-repeat: repeat-x;
+    margin: 0;
+    padding: 0;
+}
+section {
+    
+    background-color: rgba(236, 212, 182, 0.856);
+    margin: 100px;
+}
+    
+
+.lll{
+    padding: 40px;
+    margin-block-start: 10px;
+}
+
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.7);
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+}
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.modal {
+  background: #F0F2F5;
+  padding: 2.4rem;
+}
+/* Form */
+#form {
+  max-width: 500px;
+}
+#form h2 {
+  margin-top: 0;
+}
+ input {
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.8rem;
+  width: 100%;
+}
+.input-group {
+  margin-top: 0.8rem;
+}
+.input-group .help{
+  opacity: 0.4;
+}
+.input-group.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-group.actions .button,
+.input-group.actions button {
+  width: 48%;
+}
+.salvar {
+  background-color: rgb(17, 199, 17);
+  color: white;
+  border-radius: 5px;
+  margin-left: 0px;
+  height: 50px;
+  width: 250px;
+}
+.buttoncancel{
+  color: rgba(255, 0, 0, 0.5);
+  border: 2px rgba(255, 0, 0, 0.5) solid;
+  border-radius: 0.25rem;
+  width: 250px;;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+}

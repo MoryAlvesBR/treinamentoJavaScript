@@ -62,7 +62,11 @@ function objeto(name,age,gender,grade,race){
            race:race}        
     return objeto
 }
-
+    return{name:name,
+           age:age, 
+           gender:gender,
+           grade:grade,
+           race:race}}
     var pessoa = objeto('Artur',19,'masculino','2 periodo ADS', 'Pardo')
     var pessoa1= objeto('Paulo',20,'masculino','1 periodo ADS', 'Negro')
     var pessoa2= objeto('Igor',22,'masculino','1 periodo ADS','Branco')
