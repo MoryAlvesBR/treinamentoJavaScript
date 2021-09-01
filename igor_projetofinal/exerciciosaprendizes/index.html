@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Restaurante</h1>
+        <p>Bem-vindo ao "Restaurante", faca o seu pedido!</p>
+        <button onclick="Modal1.open()">Adicionar comanda</button>
+        <button onclick="Modal4.open()">Lista de Clientes</button>
+    </section>
+        <div class="modal-overlay1">
+            <div id="modal1" class="modal">
+                <button onclick="Modal1.close()" class="fechar">X</button>
+                <div class="modal-content">
+                    <h2>Login</h2>
+                    <div id="form">
+                            <div class="input-group">
+                                <input type="text" id="loginNew" name="iduser" maxlength="9" placeholder="Digite o numero do seu cartao" />
+                            </div>
+                            <div class="input-group">
+                            <small class="help">Caso e sua primeira vez, cadastre-se no botao abaixo!</small>
+                            <button onclick="Modal2.open()" class="salvar">Cadastro</button>
+                            </div>
+                            <div class="input-group actions">
+                                <button onclick="Modal4.openlogin()" id="loginto" class="salvar">Autenticar</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-overlay2">
+            <div id="modal2" class="modal">
+                <button onclick="Modal2.close()" class="fechar">X</button>
+                <div class="modal-content">
+                    <h2>Modal2</h2>
+                    <p>Cadastro</p>
+                    <div id="formcadastro">
+                            <p>Digite o nome completo do cliente:</p>
+                            <div class="input-group">
+                                <input type="text" id="inputcadname" class="fullname" name="nomeCompleto" maxlength="20" placeholder="Nome Sobrenome" />
+                            </div>
+                            <div class="input-group">
+                                <select id="fid" class="fidelidade">
+                                    <option value="999">Ouro</option>
+                                    <option value="555">Prata</option>
+                                    <option value="111">Bronze</option>
+                                    <option value="000">Padrão</option>
+                                </select>
+                            <small class="help">Defina o ranking de fidelidade para adquirir descontos. Para mais informacoes de valores consulte o caixa ou entre em contato conosco.</small>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" id="inputcadid" class="fullname" name="ID" maxlength="3" placeholder="Digite os últimos 3 digitos da sua comanda" />
+                            </div>
+                            <div class="input-group actions">
+                                <button onclick="Modal2.backpag()" class="buttoncancel">Voltar</button>
+                                <button onclick="Modal3.open()" class="salvar">Salvar</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-overlay3">
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <h2>Deseja confirmar os dados?</h2>
+                    <div id="popconfirm">
+                        <div class="input-group actions">
+                            <a href="#" onclick="Modal3.close()" class="buttoncancel">Retornar</a>
+                            <button onclick="clearVerificando();createCliente();insertCliente();compareObjects();insertHTML();Modal3.nextpag();" id="confirmcad" class="salvar3">Salvar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="modal-overlay4">
+            <div id="modal4" class="modal">
+                <div class="modal-content">
+                    <button onclick="Modal4.close()" class="fechar">X</button>
+                    <h2>Modal4 MenuPrincipal</h2>
+                    <div id="menucontent" class="input-group">
+                        <input type="text" id="searchClient" name="iduser" placeholder="Digite a comanda do cliente" /><img class="lupa" src="assets/img/loupe.png">
+                        <button onclick="Modal4.cardapio()" class="logCardapio" class="salvar">Cardapio</button>
+                        <ul id="menulist" class="menuClientes">
+
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal-overlay5">
+            <div id="modal5" class="modal">
+                <div class="modal-content">
+                    <button onclick="Modal5.close()" class="fechar">X</button>
+                    <h2>Modal5 Cardapio</h2>
+                    <div id="formcardapio">
+                        <div id="pratos"></div>
+                            <div id="veg" class="itemscard1">
+                                <img class="cardapio1" src="assets/img/">
+                                <select id="vegquant" class="fidelidade">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>    
+                                <button onclick="Modal5.open()">adicionar</button>
+                            </div>
+                            <div id="fish" class="itemscard1">
+                                <img class="cardapio2" src="assets/img/">
+                                <select id="fishquant" class="fidelidade">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>    
+                                <button onclick="Modal5.open()">adicionar</button>
+                            </div>
+                            <div id="frango" class="itemscard1">
+                                <img class="cardapio3" src="assets/img/">
+                                <select id="frangoquant" class="fidelidade">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>    
+                                <button onclick="Modal5.open()">adicionar</button>
+                            </div>
+                            <div id="carnes" class="itemscard1">
+                                <img class="cardapio4" src="assets/img/">
+                                <select id="carnesquant" class="fidelidade">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>    
+                                <button onclick="Modal5.open()">adicionar</button>
+                            </div>
+                        <div id="sobremesas"></div>
+                            <div id="cake" class="itemscard2">
+                                <img class="cardapio5" src="assets/img/">
+                                <select id="cakequant" class="fidelidade">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>    
+                                <button onclick="Modal5.open()">adicionar</button>
+                            </div>
+                            <div id="icediet" class="itemscard2">
+                                <img class="cardapio6" src="assets/img/">
+                                <select id="icedietquant" class="fidelidade">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>    
+                                <button onclick="Modal5.open()">adicionar</button>
+                            </div>
+                            <div id="moused" class="itemscard2">
+                                <img class="cardapio7" src="assets/img/">
+                                <select id="mousedquant" class="fidelidade">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>    
+                                <button onclick="Modal5.open()">adicionar</button>
+                            </div>
+                            <div id="mousec" class="itemscard2">
+                                <img class="cardapio8" src="assets/img/">
+                                <select id="mousecquant" class="fidelidade">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>    
+                                <button onclick="Modal5.open()">adicionar</button>
+                            </div>
+                        <div id="bebidas"></div>
+                            <div id="cha" class="itemscard3">
+                                <img class="cardapio9" src="assets/img/">
+                                <select id="chaquant" class="fidelidade">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>    
+                                <button onclick="Modal5.open()">adicionar</button>
+                            </div>
+                            <div id="sucol" class="itemscard3">
+                                <img class="cardapio10" src="assets/img/">
+                                <select id="sucolquant" class="fidelidade">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>    
+                                <button onclick="Modal5.open()">adicionar</button>
+                            </div>
+                            <div id="sucom" class="itemscard3">
+                                <img class="cardapio11" src="assets/img/">
+                                <select id="sucomquant" class="fidelidade">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>    
+                                <button onclick="Modal5.open()">adicionar</button></div>
+                            <div id="refrid" class="itemscard3">
+                                <img class="cardapio12" src="assets/img/">
+                                <select id="refridquant" class="fidelidade">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>    
+                                <button onclick="Modal5.open()">adicionar</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-overlay6">
+            <div id="modal6" class="modal">
+                <div class="modal-content">
+                    <h1>Deseja confirmar o pedido?</h1>
+                    <div id="cardapioconfirm">
+                        <h2>Digite a comanda do usuário para adicionar a lista de pedidos.</h2>
+                        <input type="text" id="inputcomanda" class="fullname" name="nomeCompleto" placeholder="Ex.: (GOLD)999001" />
+                            <div class="input-group actions">
+                                <button onclick="Modal5.closeConfirm()" class="buttoncancel">Voltar</button>
+                                <button onclick="Modal5.addPedido()" class="salvar">Salvar</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal-overlay7">
+            <div id="modal7" class="modal">
+                <div class="modal-content">
+                    <button onclick="" class="fechar">X</button>
+                    <h2>Lista de Pedidos/Tempo/Conta parcial</h2>
+                    <div id="pedidocontent">
+                        
+                    </div>
+                    <div id="pedido info">
+                    </div>
+                    <div class="input-group actions">
+                        <button onclick="" class="salvar">Finalizar pedido</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-overlay8">
+            <div id="modal8" class="modal">
+                <div class="modal-content">
+                    <button onclick="" class="fechar">X</button>
+                    <h2>Fechar a conta/10%/Valor a ser pago</h2>
+                    <div id="form">
+                            <div class="input-group">
+                                <input type="text" id="valorpago" name="description" placeholder="Valor a ser pago"/>
+                            </div>
+                            <div class="input-group">
+                                <small class="help">Deseja adicionar os 10%</small>
+                                <select id="dezporcento">
+                                    <option value="true">Sim</option>
+                                    <option value="false">Não</option>
+                                </select>
+                            </div>
+                            <div class="input-group actions">
+                                <button onclick="" class="salvar">Fechar conta</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal-overlay10">
+            <div id="modal10" class="modal">
+                <div class="modal-content">
+                    <button class="fechar">X</button>
+                    <h2>Deseja voltar ao site?</h2>
+                    <div id="form">
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" id="description" name="description" placeholder="Descrição" />
+                            </div>
+                            <div class="input-group">
+                                <input type="number" step="0.01" id="valor" name="amount" placeholder="R$ 0,00"/>
+                            <small class="help">Use o sinal - (negativo) para despesas e , (vírgula) para casas demais</small>
+                            </div>
+                            <div class="input-group">
+                                <input type="date" id="date" name="date" />
+                            </div>
+                            <div class="input-group actions">
+                                <a href="#" onclick="Modal.close()" class="buttoncancel">Cancelar</a>
+                                <button onclick="" class="salvar">Salvar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

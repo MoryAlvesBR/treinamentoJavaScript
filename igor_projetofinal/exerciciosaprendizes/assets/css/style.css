@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+:root {
+    --primary-color: rgb(42, 148, 235);
+    --primary-color-darker: rgb(27, 76, 116);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    background-image:url('../img/tema7.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.fechar{
+    float: right;
+    background: none;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    color:rgb(17, 199, 17);
+    font-size: 0.8em;
+}
+
+.btn1 {
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.btn1:hover {
+    background: var(--primary-color-darker);
+}
+
+.btn1:active {
+    background: red;
+}
+
+.modal-overlay1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+.modal-overlay1.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+.modal-overlay2.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay3 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+.modal-overlay3.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay4 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+.modal-overlay4.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay5 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+.modal-overlay5.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay6 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+.modal-overlay6.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay7 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+.modal-overlay7.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay8 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+.modal-overlay8.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay9 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+.modal-overlay9.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay10 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+.modal-overlay10.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal{
+    /* transform: translate(0%,-25%); */
+    border-radius: 10px;
+    background-color: #F0F2F5;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+@keyframes clientmenu {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.clientmenu.active{
+    animation: modal .3s;  
+}
+
+.modal.active{
+    animation: modal .5s;
+}
+
+/* Form */
+#form {
+    max-width: 500px;
+}
+#form h2 {
+    margin-top: 0;
+}
+input {
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.8rem;
+    width: 100%;
+}
+.input-group {
+    margin-top: 0.8rem;
+}
+.input-group .help{
+    opacity: 0.4;
+}
+.input-group.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-group.actions .button,
+.input-group.actions button {
+    width: 48%;
+}
+.salvar {
+    background-color: rgb(221, 31, 31);
+    color: white;
+    border-radius: 5px;
+    margin-left: 0px;
+    height: 50px;
+    width: 250px;
+    cursor: pointer;
+}
+.buttoncancel{
+    color: rgba(196, 193, 193, 0.658);
+    border: 2px rgba(0, 0, 0, 0.5) solid;
+    border-radius: 0.25rem;
+    width: 250px;;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+}
+
+.delbutton {
+    display: flex;
+    width: 15px;
+    height: 15px;
+}
+
+.notebutton{
+    display:flex;
+    width: 15px;
+    height:15px;
+}
+
+
+
+.padrao1 {
+    color: gold;
+}
+.padrao2 {
+    color: silver;
+}
+.padrao3 {
+    color: brown;
+}
+.padrao4 {
+    color: blue;
+}
