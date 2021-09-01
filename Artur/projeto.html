@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <link rel="stylesheet" href="projeto (copy 1).css">
+</head>
+<br>
+
+    <div onclick = "acao()" class = "cadastrar">Cadastrar Cliente</div>
+    <div onclick = "acao1()" class = "editar">Editar Cliente</div>
+    <div onclick = "acao2()" class = "pesquisar">Pesquisar Cliente</div>
+    <div onclick = "acao3()" class = "remover">Remover Cliente</div>
+   
+    <div class = "modal3">
+        <div onclick="fechar3()" class="fechar3"><h3 class="x">X</h3></div>
+        <h2 class = "titulo3">Remover dados do Cliente</h2>
+    <div class = "form3"> <br/><br/> <input type ="search" placeholder = "Pesquisar por ID" class="id3"> 
+        <h2 class = "ou1">OU</h2>
+        <input type="search" placeholder="Pesquisar por CPF" class="cpf3"><br/><br/>
+        <input type="date" placeholder="Data" class="data3">
+     
+    </div>
+    <div onclick = "fechar3()" class = "botao6">Cancelar </div>
+    
+    <div onclick = "acao5()" class = "confirmar1">Confirmar</div> 
+    <div class = "modal5">
+        <div onclick="fechar6()" class="fechar4"><h3 class="x1">X</h3></div>
+        <h2 class = "titulo4">Remover dados</h2>
+        <div class = "p1-form"><p class = "texto"><br/><br/>Tem certeza que gostaria<br/> de remover os dados desse cliente?</p>
+            <div onclick = "fechar6()" class = "nao">Não </div>
+            <div onclick = "fechar5()" class = "sim">Sim</div> 
+        </div>
+    </div>
+    </div>
+    <div class = "modal2">
+        <div onclick="fechar2()" class="fechar2"><h3 class="x">X</h3></div>
+        <h2 class = "titulo2">Pesquisar pelo Cliente</h2>
+    <div class = "form2"> <br/><br/> <input type="search" placeholder="Pesquisar por ID" class="id2">
+        <h2 class="ou">OU</h2>
+        <input type="search" placeholder="Pesquisar por CPF" class="cpf2">
+        <br/><br/><input type="date" placeholder="Data" class="data2">
+     
+    </div>
+
+    <div onclick = "fechar2()" class = "botao5">Cancelar </div>
+    
+    <div onclick = "acao4()" class = "confirmar">Confirmar</div>    <!-- ajeitar o script desse para enviar para um BD? -->
+    <div class = "modal4">
+        <div onclick="fechar4()" class="fechar2"><h3 class="x">X</h3></div>
+        <h2 class = "p-cliente">Pedido do Cliente</h2>
+        <div class = "p-form">
+            <br/><br/><input type="number" class="mesa" placeholder="Mesa"><br/><br/>
+            <label class= "t-pratos">Pratos: </label>
+            <select class="pratos">
+                <option value="Selecionar">Selecionar</option>
+                <option value="Vegetariano">Vegetariano</option>
+                <option value="Peixe">Peixe</option>
+                <option value="Frango">Frango</option>
+                <option value="Carnes">Carnes</option>
+            </select> <label class="t-qnt1">Qnt:</label><input type="number" class="qnt1" placeholder = "Qnt"><br/><br/>
+            <label class= "t-sobremesa">Sobremesa: </label>
+            <select class="sobremesa">
+                <option value="Selecionar">Selecionar</option>
+                <option value="Vegetariano">Bolo de Abacaxi</option>
+                <option value="Peixe">Sorvete diet</option>
+                <option value="Frango">Mouse diet</option>
+                <option value="Carnes">Mouse chocolate</option>
+            </select> <label class="t-qnt2">Qnt:</label><input type="number" class="qnt2" placeholder = "Qnt"><br/><br/>
+            <label class= "t-bebidas">Bebidas: </label>
+            <select class="bebidas">
+                <option value="Selecionar">Selecionar</option>
+                <option value="Vegetariano">Cha</option>
+                <option value="Peixe">Suco de laranja</option>
+                <option value="Frango">Suco de melao</option>
+                <option value="Carnes">Refrigerante diet</option>
+            </select> <label class="t-qnt3">Qnt:</label><input type="number" class="qnt3" placeholder = "Qnt"><br/><br/>
+        </div>
+        <div onclick = "acao6()" class = "prosseguir">Prosseguir</div>
+        <div onclick = "fechar4()" class = "voltar">Voltar</div> 
+        <div class = "modal6">
+            <div onclick="fechar7()" class="fechar1"><h3 class="x">X</h3></div>
+            <h2 class = "titulo5">Forma de Pagamento</h2>
+            <div class = "form4">
+
+            <div onclick = "acao7()" class = "credito">Credito</div>
+            <div onclick = "acao8()" class = "debito">Debito</div>
+
+            <div class = "c-modal">
+            <div onclick="fechar8()" class="fechar1"><h3 class="x">X</h3></div>
+            <h2 class = "t-credito">Credito</h2>
+                <div class = "c-form">
+                <br/><br/>
+                <input type="text" placeholder = "Nome do Titular" class="titular"><br/><br/>
+                <input type="text" placeholder = "Numero" class= "numero"><br/><br/>
+                <input type="month" placeholder = "Validade" class= "validade">
+                <input type="number" placeholder = "CVV" class= "cvv"><br/><br/>
+                <label class = "t-fidelidade1">Fidelidade: </label><select class = "b1-fidelidade"><option value ="Selecionar">Selecionar</option><option value ="Nenhuma">Nenhuma</option><option value ="Bronze">Bronze</option><option value ="Prata">Prata</option><option value ="Ouro">Ouro</option></select>
+                <div onclick = "" class = "prosseguir1">Prosseguir</div>
+                <div onclick = "fechar8()" class = "voltar1">Voltar</div> 
+                </div>
+            </div>
+
+            <div class = "d-modal">
+            <div onclick="fechar9()" class="fechar1"><h3 class="x">X</h3></div>
+            <h2 class = "t-debito">Debito</h2>
+            <div class = "c-form">
+                <br/><br/>
+                <input type="text" placeholder = "Nome do Titular" class="titular"><br/><br/>
+                <input type="text" placeholder = "Numero" class= "numero"><br/><br/>
+                <input type="month" placeholder = "Validade" class= "validade">
+                <input type="number" placeholder = "CVV" class= "cvv"><br/><br/>
+                <label class = "t-fidelidade1">Fidelidade: </label><select class = "b1-fidelidade"><option value ="Selecionar">Selecionar</option><option value ="Nenhuma">Nenhuma</option><option value ="Bronze">Bronze</option><option value ="Prata">Prata</option><option value ="Ouro">Ouro</option></select>   
+                <div onclick = "" class = "prosseguir1">Prosseguir</div>
+                <div onclick = "fechar9()" class = "voltar1">Voltar</div>   
+                </div>
+            </div>
+
+            </div>
+            </div>        
+        </div> 
+     </div>
+     
+   
+    </div>
+
+    <div class = "modal1">
+        <div onclick="fechar1()" class="fechar1"><h3 class="x">X</h3></div>
+        <h2 class = "titulo1">Editar dados do Cliente</h2>
+    <div class = "form1"> <br/><br/> <input type="text" placeholder="ID do Cliente" class="id1">
+        <br/><br/> <input type="text" placeholder="Nome" class="nome1">
+        <br/><br/> <input type="text" placeholder="Sobrenome" class="sobrenome1">
+        <br/><br/> <input type="text" placeholder="CPF" class="cpf1">
+        <br/><br/><input type="date" placeholder="Data" class="data1">
+        <br/><br/> <label class = "t-fidelidade1">Fidelidade: </label><select class = "b1-fidelidade"><option value ="Selecionar">Selecionar</option><option value ="Nenhuma">Nenhuma</option><option value ="Bronze">Bronze</option><option value ="Prata">Prata</option><option value ="Ouro">Ouro</option></select>     
+    </div>
+    <div onclick = "fechar1()" class = "botao2">Confirmar </div> <!-- ajeitar o script desse para enviar para um BD? -->
+    <div onclick = "fechar1()" class = "botao4">Cancelar </div> 
+    </div>
+
+    <div class = "modal">
+        <div onclick="fechar()" class="fechar"><h3 class="x">X</h3></div>
+        <h2 class = "titulo">Cadastro do Cliente</h2>
+    <div class = "form"> <br/><br/> <input type="text" placeholder="ID" class="b-id">
+        <br/><br/> <input type="text" placeholder="Nome" class="b-nome">
+        <br/><br/> <input type="text" placeholder="Sobrenome" class="b-sobrenome">
+        <br/><br/> <input type="text" placeholder="CPF" class="b-cpf">
+        <br/><br/><input type="date" placeholder="Data" class="b-data">
+        <br/><br/> <label class = "t-fidelidade">Fidelidade: </label><select class = "b-fidelidade"><option value ="Selecionar">Selecionar</option><option value ="Nenhuma">Nenhuma</option><option value ="Bronze">Bronze</option><option value ="Prata">Prata</option><option value ="Ouro">Ouro</option></select>
+    </div>
+    <div class= "resultado"> </div>
+    <div onclick = "fechar()" class = "botao2">Confirmar </div> <!-- ajeitar o script desse para enviar para um BD? -->
+    <div onclick = "fechar()" class = "botao3">Cancelar </div>  
+    </div>
+    
+    
+    
+    
+    
+    <script src="projeto.js"></script>
+</body>
+</html>

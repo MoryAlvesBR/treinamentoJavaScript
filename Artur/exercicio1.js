@@ -55,11 +55,13 @@ console.log('total: ',x*2)
 // 9 - criar uma lista de objetos com base no ponto 6
 
 function objeto(name,age,gender,grade,race){
-    return{name:name,
+    let objeto ={name:name,
            age:age, 
            gender:gender,
            grade:grade,
-           race:race}}
+           race:race}        
+    return objeto
+}
 
     var pessoa = objeto('Artur',19,'masculino','2 periodo ADS', 'Pardo')
     var pessoa1= objeto('Paulo',20,'masculino','1 periodo ADS', 'Negro')
