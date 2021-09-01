@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./projeto.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="http s://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Restaurante Da Lavi</title>
+</head>
+<body>
+	<section class="logo">
+        <br>
+	<center><h1 style="border: double; width: 280px; height: 60px; line-height: 30px; text-align: center;" > MEU TEMPERO NORDESTINO </h1></center>
+    <nav id="menu">
+        <ul>
+            <li><a href="projeto.html"> &#127968; Home</a></li>
+            <li><a href="#"> &#128107; Clientes</a></li>
+            <li><a href="#"> &#128203; Cardápio </a></li>
+            <li><a  onclick="Modal.open()"href="#"> &#128221; Pedidos</a></li>
+            <li><a href="#"> &#128179; Cartão Fidelidade</a></li>
+            <li><a href="#"> &#128100; Faça seu login </a></li>
+        </ul>
+    </nav>
+    <br>
+    <!-- home -->
+    <div>
+        <img src="norde.jpeg" alt="a" width="650" height="300" >
+    </div>
+        <span> Trazemos até você toda a experiência de uma comida
+típica nordestina </span></h3>
+<p class="elementor-icon-box-description">O Restaurante Encontro Nordestino surgiu do sonho inspirados em trazer para o Recife uma experiência inesquecível de encontro gastronômico, cultural e musical.</p>
+        </div>
+        </div>
+        </div>
+        </div>
+
+    <!-- 
+    <div id="formularioCliente">
+        <form action="#">
+            <label for="lbNome">Nome:</label>
+            <input type="text" id="txtNome" style="width:250px" /><br />
+            <label for="lbNumero">Número:</label>
+            <input type="text" id="txtNumero" style="width:250px" /><br />
+            <label for="lbNome">Email:</label>
+            <input type="text" id="txtNome" style="width:250px" /><br />
+            <label for="lbSexo">Sexo:</label>
+            <input type="radio" name="sexo" value="masculino">Masculino
+            <input type="radio" name="sexo" value="feminino">Feminino <br />
+            <label for="lbDataNasc">Data Nascimento:</label>
+            <input type="date" id="dataNasc" /><br />
+        
+            <input type="button" id="criarCliente" class="botaoOperacao" value="Criar" onclick="javascript: criarCliente();" />
+            <input type="reset" id="cancelar" class="botaoOperacao" value="Cancelar"/>
+        </form>
+    </div> -->
+    <div class="modal-overlay ">
+        <div class="modal">
+            <div class="modal-content">
+                <h2>REALIZE SEU PEDIDO</h2>
+                <div id="form">
+                    <form action="" onsubmit="Form.submit(event)">
+                        <div class="input-group">
+                        <small class="help">NUMERO DO PRATO</small>
+                            <input type="text" id="description" name="description" placeholder="Numeração" />
+                        </div>
+                        <div class="input-group"> 
+                        <small class="help">QUANTIDADE</small>
+                            <input type="number" step="1" id="valor" name="amount" placeholder="0"/>
+                        </div>
+                        <div class="input-group">
+                        <small class="help">NUMERO DA BEBIDA</small>
+                            <input type="text" id="description" name="description" placeholder="Numeração" />
+                        </div>
+                        <div class="input-group"> 
+                        <small class="help">QUANTIDADE</small>
+                            <input type="number" step="1" id="valor" name="amount" placeholder="0"/>
+                        </div>
+                        <div class="input-group">
+                        <small class="help">NUMERO DA SOBREMESA</small>
+                           <input type="text" id="description" name="description" placeholder="Numeração" />
+                         </div>
+                         <div class="input-group"> 
+                         <small class="help">QUANTIDADE</small>
+                              <input type="number" step="1" id="valor" name="amount" placeholder="0"/>
+                          </div>
+
+                        <div class="input-group actions">
+                            <a href="#" onclick="Modal.close()" class="buttoncancel">Cancelar</a>
+                            <button onclick="" class="salvar">Salvar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./projeto.js"></script>
+</body>
+</html>
